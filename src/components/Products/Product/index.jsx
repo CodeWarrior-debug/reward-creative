@@ -12,15 +12,15 @@ const Product = ({ product }) => {
     return (
         <main>
 
-        <Card className={classes.root} image='' title={product.name}>
+        <Card className={classes.root} image={product.imgLink} title={product.name}>
             <CardMedia />
             <CardContent>
                 <div className={classes.cardContent}>
                     <Typography variant='h5' gutterBottom>
-                        {product.price}
+                      ${product.price}
                     </Typography>
                 </div>
-                    <Typography variant='h2' color='textSecondary' >{product.description}</Typography>
+                    <Typography variant='body2' color='textSecondary' >{product.description}</Typography>
             </CardContent>
             <CardActions disableSpacing className={classes.cardActions}>
                 <IconButton aria-label='Add to Cart' >
